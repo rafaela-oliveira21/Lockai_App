@@ -7,7 +7,7 @@ export default function RecuperarSenha() {
     <div className="flex flex-col min-h-screen bg-background px-6 relative">
       {/* Botão de voltar */}
       <button
-        onClick={() => navigate("/login.jsx")}
+        onClick={() => navigate("/login")}
         className="absolute top-4 left-4 bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold hover:bg-secondary"
       >
         &lt;
