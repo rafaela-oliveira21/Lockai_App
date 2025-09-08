@@ -4,15 +4,16 @@ import { useNavigate } from "react-router-dom";
 
 export default function AlterarSenha() {
   const navigate = useNavigate();
+
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [novaSenha, setNovaSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
   const [erroSenha, setErroSenha] = useState("");
+  const [mensagemSucesso, setMensagemSucesso] = useState("");
 
   const handleNovaSenhaChange = (e) => {
     const value = e.target.value;
-    // Regex corrigido ✅
     const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&()_+\-=\[\]{};':"\\|,.<>\/?])[A-Za-z0-9!@#$%^&()_+\-=\[\]{};':"\\|,.<>\/?]{8,}$/;
     setNovaSenha(value);
 
@@ -50,9 +51,18 @@ export default function AlterarSenha() {
       return;
     }
 
-    // Lógica para alterar a senha
+    // Lógica de sucesso
     console.log("Senha alterada com sucesso!");
-    alert("Senha alterada com sucesso!");
+    setMensagemSucesso("Senha alterada com sucesso!");
+
+    // Limpa os campos
+    setNovaSenha("");
+    setConfirmarSenha("");
+
+    // Remove a mensagem após 3 segundos
+    setTimeout(() => {
+      setMensagemSucesso("");
+    }, 3000);
   };
 
   return (
@@ -91,6 +101,26 @@ export default function AlterarSenha() {
         </div>
       </div>
 
+      {/* MENSAGEM DE SUCESSO */}
+      {mensagemSucesso && (
+        <div className="mb-4 p-3 bg-green-400/10 border border-green-400/30 rounded-lg flex items-start w-full max-w-sm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 text-green-400 mr-2 flex-shrink-0 mt-0.5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 13l5-5-1.414-1.414L9 10.172 7.414 8.586 6 10l3 3z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <p className="text-green-400 text-sm">{mensagemSucesso}</p>
+        </div>
+      )}
+
+      {/* FORMULÁRIO */}
       <div className="w-full max-w-sm bg-primary p-6 rounded-2xl shadow-md border border-gray-700">
         <form onSubmit={handleSubmit}>
           {/* Campo Nova Senha */}
@@ -158,6 +188,7 @@ export default function AlterarSenha() {
             </div>
           )}
 
+          {/* Botão de envio */}
           <button
             type="submit"
             disabled={

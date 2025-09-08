@@ -219,7 +219,7 @@ export default function Cadastro() {
             to="/login"
             className="text-secondary font-medium hover:underline"
           >
-            login
+            Login
           </Link>
         </p>
       </div>

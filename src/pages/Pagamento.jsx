@@ -28,14 +28,13 @@ export default function Pagamento() {
           >
             <ArrowLeft size={20} />
           </button>
-          <h1 className="text-xl font-semibold text-white">Pagamento</h1>
-          <div className="w-10"></div>
         </div>
       </div>
 
       <div className="w-full max-w-sm bg-primary p-6 rounded-2xl shadow-md space-y-6">
         
         {/* Card do Plano */}
+        <h1 className="text-xl font-semibold text-white">Pagamento</h1>
         <div className="p-5 bg-blue-600/30 border border-blue-700/50 rounded-xl shadow"
 >
           <div className="flex justify-between items-start">
@@ -103,7 +102,7 @@ export default function Pagamento() {
 
       {/* Notificação */}
       {comprovanteEnviado && (
-        <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-lg">
+        <div className="mb-4 p-3 bg-green-400/10 border border-green-400/30 rounded-lg flex items-start w-full max-w-sm text-white">
           <div className="flex items-center">
             <Check size={20} className="mr-2" />
             Comprovante enviado com sucesso!
