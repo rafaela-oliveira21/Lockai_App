@@ -1,10 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 import Login from "./pages/login";
+=======
+import Login from "./pages/Login";
+import Cadastro from "./pages/Cadastro";
+import Home from "./pages/Home";
+>>>>>>> 3b12afeee0f7003474d290531605105de7bc8c15
 import RecuperarSenha from "./pages/RecuperarSenha";
-import Cadastro from "./pages/cadastro";
-import CodigoSenha from "./pages/CodigoSenha";
 import AlterarSenha from "./pages/AlterarSenha";
+import CodigoSenha from "./pages/CodigoSenha";
+import CadastroPlanos from "./pages/CadastroPlanos";
+import CadastroPlanosCategoria from "./pages/CadastroPlanosCategoria";
 import Pagamento from "./pages/Pagamento";
+
 
 export default function App() {
   return (
@@ -16,6 +24,9 @@ export default function App() {
         <Route path="/CodigoSenha" element={<CodigoSenha/>}/>
         <Route path="/AlterarSenha" element={<AlterarSenha />}/>
         <Route path="/Pagamento" element={<Pagamento/>}/>
+        <Route path="/Home" element={<Home/>}/>
+        <Route path="/CadastroPlanos" element={<CadastroPlanos/>}/>
+        <Route path="/CadastroPlanosCategoria" element={<CadastroPlanosCategoria/>}/>
       </Routes>
     </Router>
   );
