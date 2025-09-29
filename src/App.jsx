@@ -17,6 +17,7 @@ export default function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/RecuperarSenha" element={<RecuperarSenha />} />
+        <Route path="/Recuperar-senha" element={<RecuperarSenha />} />
         <Route path="/CodigoSenha" element={<CodigoSenha/>}/>
         <Route path="/AlterarSenha" element={<AlterarSenha />}/>
         <Route path="/Pagamento" element={<Pagamento/>}/>
