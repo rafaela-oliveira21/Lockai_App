@@ -54,7 +54,7 @@ export default function CodigoSenha() {
       
       {/* Botão de voltar */}
 <button
-  onClick={() => navigate("/recuperar-senha")}
+  onClick={() => navigate("/recuperarSenha")}
   className="absolute top-4 left-4 bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold hover:bg-secondary"
 >
   &lt;
@@ -67,7 +67,7 @@ export default function CodigoSenha() {
 
         <p className="text-sm text-gray-300 mb-6">
           Enviamos um código de 6 dígitos para:
-          <span className="text-secondary font-medium"> valter@gmail.com</span>
+          <span className="text-secondary font-medium"> teste@gmail.com</span>
         </p>
 
         <div className="flex justify-between mb-6">

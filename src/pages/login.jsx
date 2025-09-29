@@ -76,7 +76,7 @@ export default function Login() {
 
         {/* Link esqueci senha */}
         <div className="text-left mb-4 mt-2">
-          <Link to="/recuperar-senha" className="text-sm text-secondary hover:underline">
+          <Link to="/recuperarSenha" className="text-sm text-secondary hover:underline">
             Esqueci minha senha
           </Link>
         </div>
