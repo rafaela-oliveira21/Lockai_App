@@ -1,12 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
-
 import 'swiper/css/pagination';
-import armario from '../assets/img/armario.jpg';
-import armario2 from '../assets/img/armario2.jpg';
-import armario3 from '../assets/img/armario3.jpg';
-import MenuRodape from '../components/MenuRodape';
+import armario from '/assets/img/armario.jpg';
+import armario2 from '/assets/img/armario2.jpg';
+import armario3 from '/assets/img/armario3.jpg';
+import MenuRodape from '/components/MenuRodape';
 
 export default function Home() {
 
@@ -65,7 +64,7 @@ export default function Home() {
           </SwiperSlide>
             
           </Swiper>
-              <MenuRodape></MenuRodape>
+              <MenuRodape>Ola</MenuRodape>
           </div>
            
         

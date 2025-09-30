@@ -1,11 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
 import Login from "./pages/login";
-=======
-import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import Home from "./pages/Home";
->>>>>>> 3b12afeee0f7003474d290531605105de7bc8c15
 import RecuperarSenha from "./pages/RecuperarSenha";
 import AlterarSenha from "./pages/AlterarSenha";
 import CodigoSenha from "./pages/CodigoSenha";
@@ -18,7 +14,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/recuperar-senha" element={<RecuperarSenha />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/CodigoSenha" element={<CodigoSenha/>}/>
