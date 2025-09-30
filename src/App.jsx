@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/login";
 import Cadastro from "./pages/Cadastro";
-import Home from "./pages/Home";
 import RecuperarSenha from "./pages/RecuperarSenha";
 import AlterarSenha from "./pages/AlterarSenha";
 import CodigoSenha from "./pages/CodigoSenha";
-import CadastroPlanos from "./pages/CadastroPlanos";
-import CadastroPlanosCategoria from "./pages/CadastroPlanosCategoria";
 import Pagamento from "./pages/Pagamento";
+import Planos from "./pages/Planos";
+import Locacao from "./pages/Locacao";
+import Reserva from "./pages/Reserva";
+import Home from "./pages/Home";
 
 
 export default function App() {
@@ -15,15 +16,19 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/recuperar-senha" element={<RecuperarSenha />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/Recuperar-senha" element={<RecuperarSenha />} />
         <Route path="/CodigoSenha" element={<CodigoSenha/>}/>
         <Route path="/AlterarSenha" element={<AlterarSenha />}/>
         <Route path="/Pagamento" element={<Pagamento/>}/>
-        <Route path="/Home" element={<Home/>}/>
-        <Route path="/CadastroPlanos" element={<CadastroPlanos/>}/>
-        <Route path="/CadastroPlanosCategoria" element={<CadastroPlanosCategoria/>}/>
+        <Route path="/Planos" element={<Planos />} />
+        <Route path="/Locacao" element={<Locacao />} />
+        <Route path="/Reserva" element={<Reserva />} />
+        <Route path="/Home" element={<Home />} />
       </Routes>
     </Router>
   );
 }
+

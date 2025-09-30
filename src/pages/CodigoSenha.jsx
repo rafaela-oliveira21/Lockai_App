@@ -57,12 +57,13 @@ export default function CodigoSenha() {
   return (
     <div className="min-h-screen bg-background flex flex-col justify-center items-center px-6">
       {/* Botão de voltar */}
-      <button
-        onClick={() => navigate("/recuperar-senha")}
-        className="absolute top-4 left-4 bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold hover:bg-secondary"
-      >
-        &lt;
-      </button>
+
+<button
+  onClick={() => navigate("/recuperar-senha")}
+  className="absolute top-4 left-4 bg-secondary text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold hover:bg-secondary"
+>
+  &lt;
+</button>
 
       <div className="w-full max-w-sm bg-primary p-6 rounded-2xl shadow-md">
         <h1 className="text-xl font-semibold text-white mb-2">
@@ -71,7 +72,7 @@ export default function CodigoSenha() {
 
         <p className="text-sm text-gray-300 mb-6">
           Enviamos um código de 6 dígitos para:
-          <span className="text-secondary font-medium"> valter@gmail.com</span>
+          <span className="text-secondary font-medium"> teste@gmail.com</span>
         </p>
 
         {/* ✅ Mensagem de sucesso */}
